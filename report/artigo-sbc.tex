@@ -1,0 +1,25 @@
+% Substituir este arquivo pelo template oficial da SBC antes da entrega.
+% Limite total: 6 paginas, incluindo referencias.
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\title{Azeroth's Oracle: Sistema Especialista com Knowledge Graph e GraphRAG}
+\author{Miguel Lisboa \and Nathan Nóbrega \and Luís Henrique Carvalho}
+\begin{document}
+\maketitle
+\begin{abstract}
+Este artigo apresenta o Azeroth's Oracle, um sistema especialista acadêmico que combina a Blizzard World of Warcraft Classic Game Data API como fonte de ingestão, um grafo de propriedades em Memgraph, recuperação GraphRAG por Cypher e uma LLM para responder perguntas fundamentadas sobre missões e progressão em World of Warcraft Classic Era.
+\end{abstract}
+\section{Introdução}
+Contextualizar o problema, o recorte do domínio e o objetivo.
+\section{Modelagem do conhecimento}
+Documentar entidades, relações, propriedades, snapshots da API, fontes e decisões de curadoria para relações não expostas pela API.
+\section{Arquitetura}
+Explicar o pipeline API--snapshots--grafo e pergunta--intenção--Cypher--grafo--LLM--fundamentação.
+\section{Demonstração e resultados}
+Apresentar perguntas, respostas, evidências e testes de ausência de conhecimento.
+\section{Limitações}
+Discutir cobertura, versões do jogo, dependência da API e resolução de entidades.
+\section{Conclusão}
+Sintetizar aprendizados e trabalhos futuros.
+\end{document}

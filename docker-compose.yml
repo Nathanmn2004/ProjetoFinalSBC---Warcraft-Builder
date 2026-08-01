@@ -1,0 +1,28 @@
+services:
+  memgraph:
+    image: memgraph/memgraph-mage:latest
+    container_name: azeroths-oracle-memgraph
+    command: ["--log-level=WARNING"]
+    ports:
+      - "7687:7687"
+      - "7444:7444"
+    volumes:
+      - memgraph_data:/var/lib/memgraph
+    healthcheck:
+      test: ["CMD-SHELL", "echo 'RETURN 1;' | mgconsole --host 127.0.0.1 --port 7687"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  lab:
+    image: memgraph/lab:latest
+    container_name: azeroths-oracle-lab
+    ports:
+      - "3000:3000"
+    depends_on:
+      memgraph:
+        condition: service_healthy
+
+volumes:
+  memgraph_data:
+

@@ -1,0 +1,13 @@
+{
+  "resources": [
+    {
+      "path": "/data/wow/item/2237",
+      "file": "item_2237_patched_pants.json",
+      "node_id": "i_patched_pants",
+      "region": "us",
+      "namespace": "static-classic1x-us",
+      "locale": "en_US",
+      "retrieved_at": "2026-08-01T18:55:29.333495+00:00"
+    }
+  ]
+}

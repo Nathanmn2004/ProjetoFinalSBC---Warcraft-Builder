@@ -1,0 +1,111 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/item/2237?namespace=static-1.15.8_63631-classic1x-us"
+    }
+  },
+  "id": 2237,
+  "name": "Patched Pants",
+  "quality": {
+    "type": "COMMON",
+    "name": "Common"
+  },
+  "level": 10,
+  "required_level": 0,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/item/2237?namespace=static-1.15.8_63631-classic1x-us"
+    },
+    "id": 2237
+  },
+  "item_class": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/item-class/4?namespace=static-1.15.8_63631-classic1x-us"
+    },
+    "name": "Armor",
+    "id": 4
+  },
+  "item_subclass": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/item-class/4/item-subclass/2?namespace=static-1.15.8_63631-classic1x-us"
+    },
+    "name": "Leather",
+    "id": 2
+  },
+  "inventory_type": {
+    "type": "LEGS",
+    "name": "Legs"
+  },
+  "purchase_price": 377,
+  "sell_price": 75,
+  "max_count": 0,
+  "is_equippable": true,
+  "is_stackable": false,
+  "preview_item": {
+    "item": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/2237?namespace=static-1.15.8_63631-classic1x-us"
+      },
+      "id": 2237
+    },
+    "quality": {
+      "type": "COMMON",
+      "name": "Common"
+    },
+    "name": "Patched Pants",
+    "media": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/media/item/2237?namespace=static-1.15.8_63631-classic1x-us"
+      },
+      "id": 2237
+    },
+    "item_class": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/4?namespace=static-1.15.8_63631-classic1x-us"
+      },
+      "name": "Armor",
+      "id": 4
+    },
+    "item_subclass": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/4/item-subclass/2?namespace=static-1.15.8_63631-classic1x-us"
+      },
+      "name": "Leather",
+      "id": 2
+    },
+    "inventory_type": {
+      "type": "LEGS",
+      "name": "Legs"
+    },
+    "binding": {
+      "type": "ON_ACQUIRE",
+      "name": "Binds when picked up"
+    },
+    "armor": {
+      "value": 46,
+      "display": {
+        "display_string": "46 Armor",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1.0
+        }
+      }
+    },
+    "sell_price": {
+      "value": 75,
+      "display_strings": {
+        "header": "Sell Price:",
+        "gold": "0",
+        "silver": "0",
+        "copper": "75"
+      }
+    },
+    "durability": {
+      "value": 40,
+      "display_string": "Durability 40 / 40"
+    }
+  },
+  "purchase_quantity": 1
+}

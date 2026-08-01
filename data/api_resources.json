@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "description": "Recursos oficiais selecionados para sincronizacao. Cada path deve ser confirmado na documentacao Classic antes de ser adicionado. node_id associa o snapshot a um no existente do seed.",
+  "resources": [
+    {
+      "path": "/data/wow/item/2237",
+      "node_id": "i_patched_pants",
+      "filename": "item_2237_patched_pants"
+    }
+  ]
+}
