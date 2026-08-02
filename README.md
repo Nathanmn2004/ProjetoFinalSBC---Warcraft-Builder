@@ -1,4 +1,4 @@
-# Azeroth's Oracle
+# Sistema Especialista Baseado em Grafo para World of Warcraft Classic Era
 
 Sistema especialista acadêmico sobre a progressão de Elwynn Forest em **World of Warcraft Classic Era**. A fonte primária planejada é a [Blizzard World of Warcraft Classic Game Data API](https://community.developer.battle.net/documentation/world-of-warcraft-classic/game-data-apis); os fatos são materializados no Memgraph e consultados por GraphRAG.
 
