@@ -343,11 +343,11 @@
     {
       "label": "Item",
       "id": "i_kobold_candle",
-      "name": "Kobold Candle",
-      "description": "Quest item collected from kobolds.",
+      "name": "Large Candle",
+      "description": "Quest item collected from kobolds for Kobold Candles.",
       "source": "Warcraft Wiki",
-      "source_url": "https://warcraft.wiki.gg/wiki/Kobold_Candle",
-      "last_updated": "2026-08-01",
+      "source_url": "https://warcraft.wiki.gg/wiki/Large_Candle",
+      "last_updated": "2026-08-02",
       "game_version": "Classic",
       "source_type": "curated_seed"
     },
@@ -376,6 +376,83 @@
       "retrieved_at": "2026-08-01T18:55:29.333495+00:00",
       "source_type": "blizzard_api",
       "game_version": "Classic"
+    },
+    {
+      "label": "Item",
+      "id": "i_glowing_wax_stick",
+      "name": "Glowing Wax Stick",
+      "description": "Consumable reward from Kobold Candles that reveals stealthy targets.",
+      "source": "Wowhead Classic",
+      "source_url": "https://www.wowhead.com/classic/item=1434/glowing-wax-stick",
+      "last_updated": "2026-08-02",
+      "game_version": "Classic",
+      "source_type": "curated_seed"
+    },
+    {
+      "label": "Item",
+      "id": "i_stormwind_armor_marker",
+      "name": "Stormwind Armor Marker",
+      "description": "Quest item provided for Cloth and Leather Armor.",
+      "source": "Wowhead Classic",
+      "source_url": "https://www.wowhead.com/classic/item=748/stormwind-armor-marker",
+      "last_updated": "2026-08-02",
+      "game_version": "Classic",
+      "source_type": "curated_seed"
+    },
+    {
+      "label": "Item",
+      "id": "i_rolf_malakai_medallions",
+      "name": "Rolf and Malakai's Medallions",
+      "description": "Quest item required to complete Report to Thomas.",
+      "source": "Wowhead Classic",
+      "source_url": "https://www.wowhead.com/classic/item=735/rolf-and-malakais-medallions",
+      "last_updated": "2026-08-02",
+      "game_version": "Classic",
+      "source_type": "curated_seed"
+    },
+    {
+      "label": "Item",
+      "id": "i_williams_shipment",
+      "name": "William's Shipment",
+      "description": "Quest item provided for Shipment to Stormwind.",
+      "source": "Wowhead Classic",
+      "source_url": "https://www.wowhead.com/classic/item=957/williams-shipment",
+      "last_updated": "2026-08-02",
+      "game_version": "Classic",
+      "source_type": "curated_seed"
+    },
+    {
+      "label": "Item",
+      "id": "i_explosive_rocket",
+      "name": "Explosive Rocket",
+      "description": "Consumable reward option from Shipment to Stormwind.",
+      "source": "Wowhead Classic",
+      "source_url": "https://www.wowhead.com/classic/item=1178/explosive-rocket",
+      "last_updated": "2026-08-02",
+      "game_version": "Classic",
+      "source_type": "curated_seed"
+    },
+    {
+      "label": "Item",
+      "id": "i_oil_of_olaf",
+      "name": "Oil of Olaf",
+      "description": "Consumable reward option from Shipment to Stormwind.",
+      "source": "Wowhead Classic",
+      "source_url": "https://www.wowhead.com/classic/item=1177/oil-of-olaf",
+      "last_updated": "2026-08-02",
+      "game_version": "Classic",
+      "source_type": "curated_seed"
+    },
+    {
+      "label": "Item",
+      "id": "i_elixir_lions_strength",
+      "name": "Elixir of Lion's Strength",
+      "description": "Consumable reward option from Shipment to Stormwind.",
+      "source": "Wowhead Classic",
+      "source_url": "https://www.wowhead.com/classic/item=2454/elixir-of-lions-strength",
+      "last_updated": "2026-08-02",
+      "game_version": "Classic",
+      "source_type": "curated_seed"
     },
     {
       "label": "Event",
@@ -556,6 +633,16 @@
       "to": "q_kobold_candles"
     },
     {
+      "from": "q_kobold_candles",
+      "type": "REWARDS",
+      "to": "i_glowing_wax_stick"
+    },
+    {
+      "from": "i_stormwind_armor_marker",
+      "type": "REQUIRED_FOR",
+      "to": "q_cloth_leather"
+    },
+    {
       "from": "q_cloth_leather",
       "type": "REWARDS",
       "to": "i_well_stitched_robe"
@@ -564,6 +651,31 @@
       "from": "q_cloth_leather",
       "type": "REWARDS",
       "to": "i_patched_pants"
+    },
+    {
+      "from": "i_rolf_malakai_medallions",
+      "type": "REQUIRED_FOR",
+      "to": "q_report_thomas"
+    },
+    {
+      "from": "i_williams_shipment",
+      "type": "REQUIRED_FOR",
+      "to": "q_shipment_stormwind"
+    },
+    {
+      "from": "q_shipment_stormwind",
+      "type": "REWARDS",
+      "to": "i_explosive_rocket"
+    },
+    {
+      "from": "q_shipment_stormwind",
+      "type": "REWARDS",
+      "to": "i_oil_of_olaf"
+    },
+    {
+      "from": "q_shipment_stormwind",
+      "type": "REWARDS",
+      "to": "i_elixir_lions_strength"
     },
     {
       "from": "q_beating_them_back",

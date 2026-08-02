@@ -1,11 +1,56 @@
 {
-  "version": "1.0",
-  "description": "Recursos oficiais selecionados para sincronizacao. Cada path deve ser confirmado na documentacao Classic antes de ser adicionado. node_id associa o snapshot a um no existente do seed.",
+  "version": "1.1",
+  "description": "Recursos oficiais Classic Era selecionados para sincronizacao. Cada path e um endpoint Item API documentado; node_id associa o snapshot a um no existente do seed. Relacoes de missoes e NPCs continuam curadas porque a cobertura Classic da API para elas nao e suficiente para este recorte.",
   "resources": [
+    {
+      "path": "/data/wow/item/772",
+      "node_id": "i_kobold_candle",
+      "filename": "item_772_large_candle"
+    },
+    {
+      "path": "/data/wow/item/1171",
+      "node_id": "i_well_stitched_robe",
+      "filename": "item_1171_well_stitched_robe"
+    },
     {
       "path": "/data/wow/item/2237",
       "node_id": "i_patched_pants",
       "filename": "item_2237_patched_pants"
+    },
+    {
+      "path": "/data/wow/item/1434",
+      "node_id": "i_glowing_wax_stick",
+      "filename": "item_1434_glowing_wax_stick"
+    },
+    {
+      "path": "/data/wow/item/748",
+      "node_id": "i_stormwind_armor_marker",
+      "filename": "item_748_stormwind_armor_marker"
+    },
+    {
+      "path": "/data/wow/item/735",
+      "node_id": "i_rolf_malakai_medallions",
+      "filename": "item_735_rolf_malakai_medallions"
+    },
+    {
+      "path": "/data/wow/item/957",
+      "node_id": "i_williams_shipment",
+      "filename": "item_957_williams_shipment"
+    },
+    {
+      "path": "/data/wow/item/1178",
+      "node_id": "i_explosive_rocket",
+      "filename": "item_1178_explosive_rocket"
+    },
+    {
+      "path": "/data/wow/item/1177",
+      "node_id": "i_oil_of_olaf",
+      "filename": "item_1177_oil_of_olaf"
+    },
+    {
+      "path": "/data/wow/item/2454",
+      "node_id": "i_elixir_lions_strength",
+      "filename": "item_2454_elixir_lions_strength"
     }
   ]
 }

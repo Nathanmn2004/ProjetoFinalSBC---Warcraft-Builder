@@ -56,7 +56,7 @@ python scripts/validate_graph.py
 python -m app.main
 ```
 
-O arquivo `data/api_resources.json` começa vazio de propósito. Adicione apenas endpoints confirmados na documentação Classic e associados a fatos que serão auditados. Os arquivos obtidos são gravados em `data/api_snapshots/` com um manifesto de namespace, locale e data.
+`data/api_resources.json` declara os dez itens Classic Era usados pelo recorte, incluindo objetivos e recompensas de Kobold Candles, Cloth and Leather Armor, Report to Thomas e Shipment to Stormwind. Adicione apenas endpoints confirmados na documentação Classic e associados a fatos que serão auditados. Os arquivos obtidos são gravados em `data/api_snapshots/` com um manifesto de namespace, locale e data.
 
 Para promover um snapshot a dado do grafo, associe-o explicitamente a um nó existente:
 
