@@ -56,7 +56,7 @@ READ_ONLY_QUERIES: dict[Intent, str] = {
         MATCH path=(target:Quest)-[:REQUIRES*0..8]->(pre:Quest)
         WHERE toLower(target.name) CONTAINS toLower($name)
         WITH path ORDER BY length(path) DESC LIMIT 1
-        RETURN reverse([n IN nodes(path) | n.name]) AS ordered_chain,
+        RETURN [n IN nodes(path) | n.name] AS ordered_chain,
                [n IN nodes(path) | n.source_url] AS sources
     """,
     Intent.NEXT_QUEST: """

@@ -28,5 +28,11 @@ class GraphRetriever:
         cypher = query_for(parsed)
         assert_read_only(cypher)
         resolved = self._resolve_name(parsed.entity_hint)
-        return resolved, self.client.query(cypher, name=resolved)
+        data = self.client.query(cypher, name=resolved)
 
+        if parsed.intent.name == "QUEST_CHAIN":
+            for row in data:
+                if "ordered_chain" in row:
+                    row["ordered_chain"] = list(reversed(row["ordered_chain"]))
+
+        return resolved, data
